@@ -3,7 +3,7 @@ import { render } from "storyblok-rich-text-react-renderer";
 
 import { useTranslation } from "react-i18next";
 
-const ArticleTeaser = ({ article, full_slug }) => {
+const ArticleTeaser = ({ article }) => {
   const { pathname } = useLocation();
   const conditionalSlug = pathname.includes("es/") ? `/es/blog/${article.slug}` : `/blog/${article.slug}`
 

@@ -39,7 +39,7 @@ const AllArticles = ({ blok }) => {
       <div className="grid w-full grid-cols-1 gap-6 mx-auto lg:grid-cols-3 lg:px-24 md:px-16">
         {articles[0] &&
           articles.map((article) => (
-            <ArticleTeaser article={article.content} key={article.uuid} />
+            <ArticleTeaser article={article.content} key={article.uuid} full_slug={article.full_slug} />
           ))}
       </div>
     </div>
